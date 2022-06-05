@@ -1,11 +1,11 @@
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import express, { NextFunction, Request, Response } from 'express';
-import morgan from 'morgan';
+// import morgan from 'morgan';
 import route from './routes';
 const app = express();
 
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 
 app.use(express.json());
 app.use(
