@@ -14,7 +14,9 @@ app.use(
   })
 );
 app.use(cookieParser());
-
+app.use('/', (req, res) => {
+  res.json('Ok');
+});
 // var whitelist = ['http://localhost:3000', 'http://localhost:3001'];
 var whitelist = [
   'https://dnt-elearning.netlify.app',
